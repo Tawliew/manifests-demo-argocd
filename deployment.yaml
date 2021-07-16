@@ -16,11 +16,11 @@ spec:
         app: simple-app
     spec:
       containers:
-      - image: tawliew/node-ronaldinho:v1.0.1 
+      - image: tawliew/techhour:91
         name: nginx
         env:
-          - name: NODEPORT
-            valueFrom:
-              secretKeyRef:
-                name: simple-app-secret
-                key: nodeport
+        - name: NODEPORT
+          valueFrom:
+            secretKeyRef:
+              name: simple-app-secret
+              key: nodeport
