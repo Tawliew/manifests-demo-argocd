@@ -16,7 +16,7 @@ spec:
         app: simple-app
     spec:
       containers:
-      - image: tawliew/node-ronaldinho:v1.0.1 
+      - image: tawliew/node-ronaldinho:v2.0.1 
         name: nginx
         env:
           - name: NODEPORT
